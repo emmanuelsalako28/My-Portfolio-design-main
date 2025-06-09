@@ -33,6 +33,21 @@ body {
 .right {
   width: 70%;
 }
+
+.right h1 a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.right h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 15px;
+}
 /* Header Nav*/
 nav {
   display: flex;
