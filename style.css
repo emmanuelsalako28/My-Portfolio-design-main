@@ -50,10 +50,21 @@ body {
 }
 /* Header Nav*/
 nav {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   gap: 20px;
-  width: 65%;
+  width: 65%; */
+    display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+nav h2 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  font-weight: normal;
 }
 /*header Nav words*/
 header h1 a {
@@ -92,13 +103,15 @@ img{
 
 /*social links styling*/
 .fa {
-  padding: 20px;
-  font-size: 30px;
+  padding: 12px;
+  font-size: 20px;
   width: 20px;
-  height: 19.95px;
+  height: 20px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 .fa:hover {
