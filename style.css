@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  margin-top: 20px;
+}
+.entire {
+  width: 1500px;
+  background-color: black;
+  margin-left: 100px;
+  height: 770px;
+ display: flex;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+/* header part*/
+#headdd {
+  padding-left: 80px;
+  margin-top: 250px;
+  width: 80%;
+}
+.right {
+  width: 70%;
+}
+/* Header Nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 65%;
+}
+/*header Nav words*/
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*header h2*/
+header h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+}
+/* Home , about resume portfolio contact stylying*/
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 29px;
+}
+
+ /* image in home styling*/
+img{
+  width: 45%;
+    border-radius: 60%;
+  background-color: black;
+  height: 70%;
+  filter: blur(5px);
+  margin-right: 200px;
+  margin-top: 100px;
+}
+
+/*social links styling*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  height: 19.95px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+}
+
+
+/*About Styling*/
+
+
+
+/* .section{
+  background-color: green;
+  width: 1600px;
+  height: 920px;
+  margin-left: 100px;
+  padding-left: 20px;
+  
+}
+.gibi{
+  display: flex;
+  flex-direction: column;
+}
+.abtheader{
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  color: black ;
+  background-color: white;
+  font-size: 24px;
+
+}
+
+.navy{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  gap: 20px;
+
+}
+
+.navy a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.wrd2{
+  display: flex;
+  width: 95%;
+  gap: 50px;
+    color: white;
+}
+
+
+.wrd2 img {
+  background-color: burlywood;
+  border: 1px solid burlywood;
+  border-radius: 50%;
+    filter: blur(0px);
+
+}
+
+table,
+th,
+td {
+  border: 0px solid black;
+  padding-top: 30px;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+table {
+  border-spacing: 15px;
+}
+
+
+
+.piro p {
+  font-style: italic !important;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
+
+}
+.aboutsection {
+  margin-left: 0px;
+  margin-top: 70px;
+}
+
+.aboutsection h2 {
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.aboutsection h1 {
+  font-size: 34px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: gold;
+  font-family: "Poppins", sans-seri;
+} */

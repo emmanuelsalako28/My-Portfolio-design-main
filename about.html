@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Emmanuel Salako</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="icon" href="/images/WhatsApp_Image_2023-02-24_at_11.27.24_AM-removebg-preview.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .section {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gibi {
+      width: 100%;
+      max-width: 1000px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .abtheader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navy {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navy h2 {
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    .navy a {
+      text-decoration: none;
+      color: #1a1a2e;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navy a:hover {
+      color: #0077b6;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .aboutsection {
+      margin-top: 30px;
+    }
+
+    .piro {
+      margin-top: 20px;
+    }
+
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px 0;
+      font-size: 15px;
+      color: #555;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+
+    @media screen and (max-width: 768px) {
+      .abtheader {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navy {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .navy.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section">
+    <div class="gibi" data-aos="fade-up">
+      <div class="abtheader">
+        <h1>Emmanuel Salako</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="navy" id="navMenu">
+          <h2><a href="index.html">Home</a></h2>
+          <h2><a href="about.html">About</a></h2>
+          <h2><a href="/professionalexperience.html">Resume</a></h2>
+          
+          <h2><a href="contact.html">Contact</a></h2>
+        </div>
+      </div>
+
+      <div class="aboutsection">
+      
+        <h2>Career highlight</h2>
+
+        <div class="piro" id="aboutContent">
+          <ul style="padding-left: 20px; line-height: 1.6;">
+    <li>
+      <strong>Developed and implemented</strong> data-driven merchandising strategies on the Jumia NG platform, surpassing performance targets by 9% (achieved 109% of goal) in H1 2025, showcasing strong execution, analytical rigor, and results-driven focus.
+    </li>
+    <li>
+      <strong>Led the end-to-end restructuring</strong> of all educational pages on the Jumia platform, delivering a modernized, user-centric experience that enhanced navigation, engagement, and conversion potential.
+    </li>
+    <li>
+      <strong>Designed and executed A/B tests</strong> to evaluate the impact of layout changes, strategically prioritizing product visibility over banner content to optimize user engagement and sales performance.
+    </li>
+  </ul>
+
+          <table>
+            <tr>
+           <td><strong>Current Role:</strong> Onsite Merchandising Manager, Jumia Nigeria</td>
+              
+            </tr>
+            <tr>
+              <td><strong>Phone:</strong> +234 708 115 0770</td>
+              <td><strong>Email:</strong> emmanuelsalako28@gmail.coam</td>
+            </tr>
+            <tr>
+              <td><strong>City:</strong> Lagos, Nigeria</td>
+              <td><strong>Degree:</strong> Bachelor of Agriculture</td>
+              
+            </tr>
+            <tr>
+              <td><strong>Experience:</strong> 4+ Years</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

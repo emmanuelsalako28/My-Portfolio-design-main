@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Experience - Salako Emmanuel</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0 2rem 2rem 2rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Navigation */
+    .abtheader {
+      background-color: #0a3d62;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+    }
+
+    .menu-toggle {
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+      user-select: none;
+    }
+ 
+    .navy h2 a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .navy h2 a:hover {
+      color: #f39c12;
+    }
+
+    /* Hide nav menu on small by default */
+    #navMenu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Section Title */
+    h2 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      color: #0a3d62;
+      border-bottom: 3px solid #0a3d62;
+      padding-bottom: 0.3rem;
+      font-weight: 700;
+    }
+
+    /* Job cards */
+    article.job {
+      background: #fff;
+      padding: 1.8rem 2rem;
+      margin-bottom: 1.8rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    article.job:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    article.job h3 {
+      margin: 0;
+      color: #2c3e50;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .company-location {
+      font-style: italic;
+      color: #555;
+      margin-top: 0.2rem;
+    }
+    .dates {
+      color: #888;
+      font-weight: 600;
+      margin-top: 0.2rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+      font-size: 1.1rem;
+    }
+    ul li strong {
+      color: #0a3d62;
+    }
+ footer {
+      text-align: center;
+      padding: 1rem 0;
+      color: #777;
+      font-size: 0.9rem;
+      background-color: #0a3d62;
+      color: white;
+      margin-top: auto;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        padding: 0 1rem 2rem 1rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      article.job {
+        padding: 1.2rem 1.4rem;
+      }
+      ul li {
+        font-size: 1rem;
+      }
+
+      /* Mobile menu toggle */
+      .menu-toggle {
+        display: block;
+      }
+      #navMenu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 0.8rem;
+      }
+      #navMenu.show {
+        display: flex;
+      }
+      .navy h2 {
+        margin: 0.6rem 0;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+
+</head>
+<body>
+
+  <div class="abtheader">
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="navy" id="navMenu">
+      <h2><a href="index.html">Home</a></h2>
+      <h2><a href="about.html">About</a></h2>
+      <h2><a href="#">Resume</a></h2>
+      <h2><a href="contact.html">Contact</a></h2>
+    </div>
+  </div>
+
+  <section id="professional-experience">
+    <h2>Professional Experience</h2>
+
+    <article class="job">
+      <h3>Onsite Merchandising Manager</h3>
+      <p class="company-location">Jumia Nigeria — Lagos, Nigeria</p>
+      <p class="dates">2023 - Till Date</p>
+      <ul>
+        <li><strong>Website & App Merchandising:</strong> Curate and optimize landing pages, regularly refresh homepage content, and manage visual assets to align with promotional goals and enhance user experience.</li>
+        <li><strong>Category Management:</strong> Develop category structures, manage product filters, define sorting/ranking rules, utilize promotional zones.</li>
+        <li><strong>Search Optimization:</strong> Manage site search, analyze search queries, implement search synonyms and rules, resolve root causes for failed searches.</li>
+        <li><strong>Analytics & Reporting:</strong> Leverage data tools to evaluate site and app performance, category effectiveness, search insights, and customer behavior translating findings into actionable merchandising strategies.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>Associate Onsite Merchandiser</h3>
+      <p class="company-location">Jumia Nigeria — Lagos, Nigeria</p>
+      <p class="dates">2022 - 2023</p>
+      <ul>
+        <li>Assisted in executing digital merchandising strategies to enhance product discoverability and increase conversions.</li>
+        <li>Executed content updates across high-traffic zones of the Jumia website, ensuring alignment with business objectives, promotional schedules, and inventory availability.</li>
+        <li>Collaborated with the Onsite Merchandising team to refine product hierarchy, improve search relevance, and enhance user navigation for better product discoverability.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>Analyst Customer Service Representative</h3>
+      <p class="company-location">Jumia Nigeria — Lagos, Nigeria</p>
+      <p class="dates">2020 - 2022</p>
+      <ul>
+        <li>Consistently surpassed key performance indicators, including first-contact resolution, customer satisfaction (CSAT), and live chat responsiveness.</li>
+        <li>Delivered prompt, friendly, and knowledgeable support across Live Chat and Email channels, earning continuous positive feedback from customers.</li>
+        <li>Served as the primary point of contact for customer inquiries, offering professional assistance across phone, email, and chat with a focus on fast and effective resolution.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>Analyst Customer Service Representative</h3>
+      <p class="company-location">Opay Nigeria — Lagos, Nigeria</p>
+      <p class="dates">2019 - 2020</p>
+      <ul>
+        <li>Delivered timely resolution of customer issues by accurately identifying concerns and providing appropriate solutions for products and services.</li>
+        <li>Responded to customer inquiries across multiple channels, offering detailed product and service information to support informed purchasing decisions.</li>
+        <li>Promoted new products and services through telemarketing, contributing to increased customer engagement and revenue growth.</li>
+      </ul>
+    </article>
+
+  </section>
+  <footer>
+    &copy; 2025 Emmanuel Salako. All rights reserved.
+  </footer>
+
+</body>
+</html>

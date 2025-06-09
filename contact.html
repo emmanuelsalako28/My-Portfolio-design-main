@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Emmanuel Salako</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .abtheader {
+      background-color: #0a3d62;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-toggle {
+      font-size: 1.8rem;
+      cursor: pointer;
+      user-select: none;
+      display: none; /* Hide on desktop */
+    }
+
+    .navy h2 {
+      display: inline-block;
+      margin: 0 1rem;
+      font-weight: 700;
+    }
+
+    .navy h2 a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    .navy h2 a:hover {
+      color: #ffcc00;
+    }
+
+    /* Container to constrain main content width */
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      flex-grow: 1;
+    }
+
+    h2 {
+      color: #0a3d62;
+      margin-bottom: 1.8rem;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 3px solid #0a3d62;
+      padding-bottom: 0.3rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 0.8rem 1rem;
+      margin-bottom: 1.5rem;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #0a3d62;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #0a3d62;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #063251;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      color: #777;
+      font-size: 0.9rem;
+      background-color: #0a3d62;
+      color: white;
+      margin-top: auto;
+    }
+
+    /* Responsive menu toggle */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .navy {
+        display: none;
+        flex-direction: column;
+        background-color: #0a3d62;
+        position: absolute;
+        top: 3.7rem;
+        right: 2rem;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        z-index: 1001;
+      }
+      .navy.active {
+        display: flex;
+      }
+      .navy h2 {
+        margin: 0.8rem 0;
+      }
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navMenu');
+      nav.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+
+  <header class="abtheader">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="navy" id="navMenu">
+      <h2><a href="index.html">Home</a></h2>
+      <h2><a href="about.html">About</a></h2>
+      <h2><a href="/professionalexperience.html">Resume</a></h2>
+      <h2><a href="contact.html">Contact</a></h2>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mnnvpzkn" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Emmanuel Salako. All rights reserved.
+  </footer>
+
+</body>
+</html>
