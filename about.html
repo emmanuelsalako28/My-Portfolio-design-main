@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Emmanuel Salako</title>
-  <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="icon" href="/images/WhatsApp_Image_2023-02-24_at_11.27.24_AM-removebg-preview.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -18,10 +17,10 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #000; /* Dark background */
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #fff; /* General text color */
     }
 
     .section {
@@ -33,10 +32,11 @@
     .gibi {
       width: 100%;
       max-width: 1000px;
-      background: #ffffff;
+      background: #ffffff; /* Keep inner content white for readability */
+      color: #333;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     }
 
     .abtheader {
@@ -45,7 +45,7 @@
       align-items: center;
       flex-wrap: wrap;
       padding-bottom: 20px;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #ccc;
     }
 
     .navy {
@@ -107,6 +107,14 @@
       color: #1a1a2e;
     }
 
+    ul {
+      color: #333;
+    }
+
+    strong {
+      color: #111;
+    }
+
     @media screen and (max-width: 768px) {
       .abtheader {
         flex-direction: column;
@@ -141,33 +149,30 @@
         <div class="navy" id="navMenu">
           <h2><a href="index.html">Home</a></h2>
           <h2><a href="about.html">About</a></h2>
-          <h2><a href="/professionalexperience.html">Resume</a></h2>
-          
+          <h2><a href="professionalexperience.html">Resume</a></h2>
           <h2><a href="contact.html">Contact</a></h2>
         </div>
       </div>
 
       <div class="aboutsection">
-      
-        <h2>Career highlight</h2>
+        <h2>Career Highlight</h2>
 
         <div class="piro" id="aboutContent">
           <ul style="padding-left: 20px; line-height: 1.6;">
-    <li>
-      <strong>Developed and implemented</strong> data-driven merchandising strategies on the Jumia NG platform, surpassing performance targets by 9% (achieved 109% of goal) in H1 2025, showcasing strong execution, analytical rigor, and results-driven focus.
-    </li>
-    <li>
-      <strong>Led the end-to-end restructuring</strong> of all educational pages on the Jumia platform, delivering a modernized, user-centric experience that enhanced navigation, engagement, and conversion potential.
-    </li>
-    <li>
-      <strong>Designed and executed A/B tests</strong> to evaluate the impact of layout changes, strategically prioritizing product visibility over banner content to optimize user engagement and sales performance.
-    </li>
-  </ul>
+            <li>
+              <strong>Developed and implemented</strong> data-driven merchandising strategies on the Jumia NG platform, surpassing performance targets by 9% (achieved 109% of goal) in H1 2025, showcasing strong execution, analytical rigor, and results-driven focus.
+            </li>
+            <li>
+              <strong>Led the end-to-end restructuring</strong> of all educational pages on the Jumia platform, delivering a modernized, user-centric experience that enhanced navigation, engagement, and conversion potential.
+            </li>
+            <li>
+              <strong>Designed and executed A/B tests</strong> to evaluate the impact of layout changes, strategically prioritizing product visibility over banner content to optimize user engagement and sales performance.
+            </li>
+          </ul>
 
           <table>
             <tr>
-           <td><strong>Current Role:</strong> Onsite Merchandising Manager, Jumia Nigeria</td>
-              
+              <td><strong>Current Role:</strong> Onsite Merchandising Manager, Jumia Nigeria</td>
             </tr>
             <tr>
               <td><strong>Phone:</strong> +234 708 115 0770</td>
@@ -176,7 +181,6 @@
             <tr>
               <td><strong>City:</strong> Lagos, Nigeria</td>
               <td><strong>Degree:</strong> Bachelor of Agriculture</td>
-              
             </tr>
             <tr>
               <td><strong>Experience:</strong> 4+ Years</td>
