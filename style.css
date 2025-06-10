@@ -110,6 +110,7 @@ nav h2 a:hover {
   filter: blur(0px);
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .entire {
