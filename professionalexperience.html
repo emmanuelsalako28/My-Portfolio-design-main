@@ -6,16 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Professional Experience - Salako Emmanuel</title>
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
   <style>
     /* Reset and base */
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f7f9fc;
@@ -23,6 +18,7 @@
       padding: 0 2rem 2rem 2rem;
       color: #333;
       line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     /* Header Navigation */
@@ -45,14 +41,25 @@
       cursor: pointer;
       display: none;
       user-select: none;
+      margin-right: 1rem;
     }
- 
+
+    .navy {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navy h2 {
+      margin: 0;
+    }
+
     .navy h2 a {
       color: white;
       text-decoration: none;
       transition: color 0.3s ease;
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
+
     .navy h2 a:hover {
       color: #f39c12;
     }
@@ -60,9 +67,8 @@
     /* Hide nav menu on small by default */
     #navMenu {
       display: flex;
-      align-items: center;
       gap: 1rem;
-      
+      align-items: center;
     }
 
     /* Section Title */
@@ -76,6 +82,53 @@
       font-weight: 700;
     }
 
+    /* Toggle Switch */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #f39c12;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    .dark-toggle {
+      margin-left: auto;
+    }
+
     /* Job cards */
     article.job {
       background: #fff;
@@ -85,38 +138,46 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
       transition: box-shadow 0.3s ease;
     }
+
     article.job:hover {
       box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
+
     article.job h3 {
       margin: 0;
       color: #2c3e50;
       font-weight: 700;
       font-size: 1.5rem;
     }
+
     .company-location {
       font-style: italic;
       color: #555;
       margin-top: 0.2rem;
     }
+
     .dates {
       color: #888;
       font-weight: 600;
       margin-top: 0.2rem;
       margin-bottom: 1rem;
     }
+
     ul {
       padding-left: 1.2rem;
       margin-top: 0;
     }
+
     ul li {
       margin-bottom: 0.6rem;
       font-size: 1.1rem;
     }
+
     ul li strong {
       color: #0a3d62;
     }
- footer {
+
+    footer {
       text-align: center;
       padding: 1rem 0;
       color: #777;
@@ -126,93 +187,54 @@
       margin-top: auto;
     }
 
-    /* Toggle Switch */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px; width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-input:checked + .slider {
-  background-color: #0a3d62;
-}
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: #1c1c1c;
+      color: #f1f1f1;
+    }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #1c1c1c;
-  color: #f1f1f1;
-}
-body.dark-mode article.job {
-  background: #2b2b2b;
-  box-shadow: 0 3px 10px rgba(255,255,255,0.05);
-}
-body.dark-mode h2, body.dark-mode h3 {
-  color: #f39c12;
-}
-body.dark-mode footer {
-  background-color: #111;
-}
-body.dark-mode a {
-  color: #f39c12;
-}
+    body.dark-mode article.job {
+      background: #2b2b2b;
+      box-shadow: 0 3px 10px rgba(255,255,255,0.05);
+    }
+
+    body.dark-mode h2, body.dark-mode h3 {
+      color: #f39c12;
+    }
+
+    body.dark-mode footer {
+      background-color: #111;
+    }
+
+    body.dark-mode a {
+      color: #f39c12;
+    }
 
     /* Responsive */
     @media (max-width: 768px) {
-      body {
-        padding: 0 1rem 2rem 1rem;
-      }
-      h2 {
-        font-size: 2rem;
-      }
-      article.job {
-        padding: 1.2rem 1.4rem;
-      }
-      ul li {
-        font-size: 1rem;
-      }
-
-      /* Mobile menu toggle */
       .menu-toggle {
         display: block;
       }
+
       #navMenu {
         flex-direction: column;
-        width: 100%;
         display: none;
-        margin-top: 0.8rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
       }
+
       #navMenu.show {
         display: flex;
       }
-      .navy h2 {
-        margin: 0.6rem 0;
-        text-align: center;
+
+      .navy {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .dark-toggle {
+        margin: 1rem auto;
       }
     }
   </style>
@@ -222,37 +244,37 @@ body.dark-mode a {
       const navMenu = document.getElementById('navMenu');
       navMenu.classList.toggle('show');
     }
-  </script>
 
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </head>
 <body>
 
   <div class="abtheader">
-
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <div class="navy" id="navMenu">
+
+    <div id="navMenu" class="navy">
       <h2><a href="index.html">Home</a></h2>
       <h2><a href="about.html">About</a></h2>
       <h2><a href="#">Resume</a></h2>
       <h2><a href="contact.html">Contact</a></h2>
     </div>
-      <div style="text-align: center; margin: 1rem;">
-  <label class="switch">
-    <input type="checkbox" id="modeToggle" onchange="toggleDarkMode()">
-    <span class="slider round"></span>
-  </label>
-</div>
+
+    <div class="dark-toggle">
+      <label class="switch">
+        <input type="checkbox" onchange="toggleDarkMode()">
+        <span class="slider round"></span>
+      </label>
+    </div>
   </div>
 
-  <div style="text-align: center; margin: 2rem 0;">
-  <a href="/assets/Salako Emmanuel Tobi.pdf" download>
-    <button style="background-color: #0a3d62; color: white; padding: 0.8rem 1.5rem; font-size: 1.1rem; border: none; border-radius: 8px; cursor: pointer;">
-      Download CV
-    </button>
-  </a>
-</div>
-
   <section id="professional-experience">
+    <h2>Professional Experience</h2>
+
+    <!-- Your job articles go here (same as before) -->
+     <section id="professional-experience">
     <h2>Professional Experience</h2>
 
     <article class="job">
@@ -301,21 +323,11 @@ body.dark-mode a {
     </article>
 
   </section>
+  </section>
+
   <footer>
     &copy; 2025 Emmanuel Salako. All rights reserved.
   </footer>
 
 </body>
-
-<script>
-  function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('show');
-  }
-
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-  }
-</script>
-
 </html>
